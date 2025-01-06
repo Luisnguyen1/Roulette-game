@@ -1,0 +1,7 @@
+{
+    "name": "roulette-game",
+    "version": "1.0.0",
+    "dependencies": {
+        "@chainlink/contracts": "^0.8.0"
+    }
+}
