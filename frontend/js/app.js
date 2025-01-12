@@ -24,7 +24,7 @@ class RouletteGame {
 
     async initialize() {
         try {
-            // Khởi tạo kết nối Hardhat ngay lập tức
+            // Khởi tạo kết nối Hardhat ở môi trường test
             const hardhatProvider = new window.ethers.providers.JsonRpcProvider("http://127.0.0.1:8545");
             
             // Verify network
@@ -344,7 +344,7 @@ class RouletteGame {
 
             // Lower background music volume during spin
             const originalVolume = this.backgroundMusic.volume;
-            this.backgroundMusic.volume = 0.5; // Increased from 0.05 to 0.15 during spin
+            this.backgroundMusic.volume = 0.5; 
 
             // Chuyển đổi số tiền sang định dạng hợp lệ
             const cleanBetAmount = betAmount.replace(',', '.');
